@@ -1,5 +1,5 @@
 module.exports = {
-  '*.ts': ['ng lint', 'prettier --write'],
-  '*.html': ['prettier --write'],
-  '*.scss': ['prettier --write'],
+  "src/**/*.ts": ["eslint", "prettier --write"],
+  "src/**/*.html": ["prettier --write"],
+  "src/**/*.scss": ["prettier --write"],
 };
