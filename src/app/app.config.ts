@@ -8,10 +8,7 @@ import { provideHttpClient } from '@angular/common/http';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    importProvidersFrom(
-      AngularSvgIconModule.forRoot()
-    ),
+    importProvidersFrom(AngularSvgIconModule.forRoot()),
     provideHttpClient(),
   ],
-
 };

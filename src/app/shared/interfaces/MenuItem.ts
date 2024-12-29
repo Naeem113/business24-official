@@ -10,5 +10,5 @@ export default interface MenuItem {
 
 export interface Badge {
   value: number;
-  color: string;  // The color could be a string, like 'accent' or other color names
+  color: string; // The color could be a string, like 'accent' or other color names
 }

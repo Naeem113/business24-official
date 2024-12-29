@@ -5,30 +5,31 @@ import { filter } from 'rxjs';
 
 const MenuItems: MenuItem[] = [
   {
-    title:'Dashboard',
+    title: 'Dashboard',
     subTitle: '',
     icon: 'dashboard',
     link: '/dashboard',
     active: false,
     badge: {
       value: 1,
-      color: 'accent'
+      color: 'accent',
     },
   },
- ]
+];
 
 @Injectable({
   providedIn: 'root',
 })
 export class SidebarService {
+  menuItems: MenuItem[] = MenuItems;
 
-  menuItems:MenuItem[] = MenuItems
-
-   constructor(private router: Router) {
+  constructor(private router: Router) {
     // Listen for route changes to update the active state of the menu items
-    this.router.events.pipe(filter((event) => event instanceof NavigationEnd)).subscribe(() => {
-      this.setActiveMenuItem();
-    });
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.setActiveMenuItem();
+      });
   }
 
   private setActiveMenuItem() {
@@ -36,20 +37,19 @@ export class SidebarService {
     console.log('currentRoute', currentRoute);
 
     // Reset the active state for all menu items
-    this.menuItems.forEach(item => item.active = false);
+    this.menuItems.forEach((item) => (item.active = false));
 
     // Find and set active menu item based on the current route
-    const activeItem = this.menuItems.find(item => currentRoute.includes(item.link));
+    const activeItem = this.menuItems.find((item) =>
+      currentRoute.includes(item.link)
+    );
     if (activeItem) {
       activeItem.active = true;
     }
   }
 
-
-    // Check if the menu item has children
-    menuHasChildren(item: MenuItem): boolean {
-      return Array.isArray(item.children) && item.children.length > 0;
-    }
-
-
+  // Check if the menu item has children
+  menuHasChildren(item: MenuItem): boolean {
+    return Array.isArray(item.children) && item.children.length > 0;
+  }
 }

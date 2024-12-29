@@ -14,8 +14,9 @@ export const frontendRoutes: Routes = [
       },
       {
         path: 'leads',
-        loadComponent: () => import('./pages/leads/leads.component').then(m => m.LeadsComponent)
-      }
-    ]
+        loadComponent: () =>
+          import('./pages/leads/leads.component').then((m) => m.LeadsComponent),
+      },
+    ],
   },
 ];

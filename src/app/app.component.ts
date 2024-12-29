@@ -6,7 +6,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,AngularSvgIconModule],
+  imports: [RouterOutlet, AngularSvgIconModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

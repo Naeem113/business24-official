@@ -5,14 +5,10 @@ import { SharedModule } from '../../shared.module';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [
-    SharedModule
-  ],
+  imports: [SharedModule],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent extends SidebarService {
-
-  active:boolean = true;
-
+  active: boolean = true;
 }

@@ -22,12 +22,12 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #7D8592; /* Secondary color for the scrollbar thumb */
+    background-color: #7d8592; /* Secondary color for the scrollbar thumb */
     border-radius: 9999px; /* Make the thumb rounded */
   }
 
   ::-webkit-scrollbar-track {
     border-radius: 9999px; /* Make the track rounded */
-    background-color: #B0B3B9; /* Use a gray border color for the track */
+    background-color: #b0b3b9; /* Use a gray border color for the track */
   }
 }

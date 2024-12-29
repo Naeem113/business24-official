@@ -13,7 +13,7 @@ export const theme = {
       danger: '#FD6157',
       success: '#14804A',
       textBlack: '#464F60',
-      grayBorder: '#E7EAEB'
+      grayBorder: '#E7EAEB',
     },
     backgroundImage: {
       'main-gradient': 'linear-gradient(to bottom, #173046, #0D5476, #0378A6)',

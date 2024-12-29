@@ -9,9 +9,7 @@ const ICONS = [
   { src: 'assets/images/svgs/settings.svg', name: 'setting' },
   { src: 'assets/images/svgs/notification.svg', name: 'notification' },
   { src: 'assets/images/svgs/filter.svg', name: 'filter-solid' },
-
-
- ];
+];
 
 @Injectable({
   providedIn: 'root',

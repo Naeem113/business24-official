@@ -5,15 +5,10 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [
-    CommonModule, AngularSvgIconModule
-  ],
+  imports: [CommonModule, AngularSvgIconModule],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-
-  active:boolean = true;
-
-
+  active: boolean = true;
 }

@@ -6,10 +6,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 @Component({
   selector: 'app-leads',
   standalone: true,
-  imports: [CommonModule,SidebarComponent, AngularSvgIconModule],
+  imports: [CommonModule, SidebarComponent, AngularSvgIconModule],
   templateUrl: './leads.component.html',
-  styleUrl: './leads.component.css'
+  styleUrl: './leads.component.css',
 })
-export class LeadsComponent {
-
-}
+export class LeadsComponent {}
