@@ -5,7 +5,7 @@ export default interface MenuItem {
   link: string;
   badge: Badge;
   active: boolean;
-  children?: MenuItem[]; // Optional children array for nested items
+  children?: MenuItem[]; // Optional children array for nested itemss
 }
 
 export interface Badge {
