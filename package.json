@@ -10,6 +10,7 @@
     "lint": "ng lint",
     "format": "prettier --write .",
     "clean": "prettier --write . && ng lint",
+    "pre-commit": "lint-staged",
     "commit": "cz"
   },
   "config": {
