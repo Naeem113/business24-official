@@ -1,0 +1,24 @@
+<div class="flex justify-start flex-col  max-w-[250px] bg-main-gradient h-screen relative">
+
+  <div class="py-10 flex justify-center w-full mx-auto">
+    <img src="/assets/images/logo/company-logo.png" alt="company logo">
+  </div>
+
+  <div class="h-[75%] overflow-y-auto">
+    @for (item of [1,2,3,4,5,6,7,8,9,3,3,3,3,]; track $index) {
+      <div class="flex items-center justify-start px-4 py-3 gap-2 cursor-pointer" [ngClass]="active && item===1?'bg-[#979797]/25':'hover:bg-[#979797]/10'">
+        <svg-icon name="dashboard" svgClass="w-6 h-6" />
+        <div class="flex items-center justify-between w-full">
+          <p class="font-semibold text-base text-white">Dashboard</p>
+          <svg-icon name="chevron-down" svgClass="w-8 h-8 mt-1" />
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="flex items-center w-full justify-center px-4 py-3 gap-2 absolute bottom-2 cursor-pointer">
+    <svg-icon name="collapse" svgClass="w-6 h-6" />
+    <p class="font-semibold text-base text-white">Collapse</p>
+  </div>
+
+</div>
