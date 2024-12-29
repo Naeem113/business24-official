@@ -19,6 +19,11 @@
       "disableGitDiffCheck": true
     }
   },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.13",
