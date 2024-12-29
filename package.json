@@ -19,6 +19,9 @@
       "disableGitDiffCheck": true
     }
   },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.13",
