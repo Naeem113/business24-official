@@ -11,8 +11,5 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  constructor(private iconsService: IconsService) {
-    let abc:any;
-    let def:any;
-  }
+  constructor(private iconsService: IconsService) {}
 }
